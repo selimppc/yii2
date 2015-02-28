@@ -242,7 +242,7 @@ class SiteController extends Controller
         return $this->render('upload', ['model' => $model]);
     }
 }
-```
+``` 
 
 There are two differences from single file upload. First is that `UploadedFile::getInstances($model, 'file');` is used
 instead of `UploadedFile::getInstance($model, 'file');`. The former returns instances for **all** uploaded files while
